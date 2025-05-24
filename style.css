@@ -1,0 +1,301 @@
+/* General Styles */
+.display_flex {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+body {
+    font-family: 'Old Standard TT', serif;
+}
+
+/* img {
+    margin: 10px;
+}
+*/
+
+h1 {
+    max-width: 100%;
+    font-family: 'Abril Fatface';
+    text-align: center;
+}
+h2 {
+    font-family: 'Abril Fatface';
+}
+h3, p {
+    font-family: 'Old Standard TT';
+}
+h2, h3, p {
+    text-align: center;
+}
+
+header {
+    font-family: 'Playfair Display', serif;
+    background-color: #E5D9F2;
+    padding: 10px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.curve {
+    border-radius: 50%;
+}
+.curve2 {
+    border-radius: 50px;
+}
+
+table {
+    border-spacing: 0;
+    margin: 0 auto;
+}
+
+.same_line {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: flex-start; /* Align images to the left */
+    gap: 20px; /* Add spacing between items */
+}
+
+.centered-text {
+    text-align: center;
+    width: 60%; /* Optional: Adjust width for proper alignment */
+    margin: 0 auto; /* Center the paragraph horizontally */
+}
+
+/* Image Container Styles */
+.image-container {
+    position: relative; /* Makes the container the reference point for positioning */
+    display: inline-block; /* Keeps the image as a block */
+    width: 100%; /* Ensure full-width for responsiveness */
+    margin-top: 10px;
+}
+
+.image-container img {
+    display: block; /* Prevents spacing issues */
+    width: 97%; /* Scales the image to the container */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    transition: all 0.5s ease, transform 0.5s ease;
+}
+
+.image-container img:hover {
+    border: 10px #C62E2E solid;
+}
+
+/* Text Overlay */
+.text-overlay {
+    position: absolute; /* Positions the text relative to .image-container */
+    font-size: 50px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%; /* Moves the text halfway down */
+    left: 50%; /* Moves the text halfway across */
+    transform: translate(-50%, -50%); /* Centers the text perfectly */
+    color: white; /* Text color */
+    font-weight: bold; /* Makes the text bold */
+    text-align: center; /* Centers the text horizontally */
+}
+
+@media (max-width: 768px) { /* For tablets and phones */
+    .text-overlay {
+        font-size: 24px;
+    }
+    .same_line {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .img1 {
+        height: 300px;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) { /* For smaller phones */
+    .text-overlay {
+        font-size: 18px;
+    }
+}
+    .icon_container i {
+        font-size: 100px; /* Default size for larger screens */
+        color: #FCC737;
+    }
+
+    @media (max-width: 768px) { /* For phones and tablets */
+        .icon_container i {
+            font-size: 50px; /* Smaller size for smaller screens */
+        }
+        .row {
+            flex-direction: column;
+        }
+        #piano_f4l {
+            flex-direction: column;
+            justify-content: center;
+        }
+        #f4limg {
+            margin-top: -190px;
+            margin-bottom: 40px;
+        }
+        #plus {
+            margin-top: -100px;
+        }
+        #feedback {
+            width: 100%;
+        }
+        #col {
+            flex-direction: column;
+        }
+        #hearparents {
+            margin-top: 100px;
+        }
+        #h1_piano_f4limg {
+            border-bottom: 3px solid black;
+            width: 70%;
+            justify-content: center;
+        }
+        #starsdiv {
+            border-width: 0;
+        }
+        h1 {
+            font-size: 30px;
+        }
+    }
+ #col {
+ display: flex;
+    align-items: center;  /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    width: 100%;
+    place-items: center;
+    margin: 0 auto;
+}
+.icon_container {
+    margin-top: 50px;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;
+}
+
+.quotes {
+	font-size: 100px;
+	color: #441752;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.col-1 {
+    align-items: center;
+    border-width: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    padding: 20px;
+    background-color: #EEEEEE;
+}
+
+.homehover {
+    color: #522258;
+    background-color: #D4BEE4;
+    height: 100px;
+    width: 200px;
+    transition: 1s ease;
+    border: solid;
+    border-width: 0;
+    font-size: 40px;
+    font-family: 'Playfair Display';
+}
+.homehover:hover {
+    background-color: #F075AA;
+    cursor: pointer;
+    color: white;
+}
+
+.instructorhover {
+    color: black;
+    background-color: white;
+    height: 100px;
+    width: 200px;
+    transition: 1s ease;
+    border: solid;
+    font-size: 30px;
+    font-family: 'Playfair Display';
+}
+.instructorhover:hover {
+    color: white;
+    background-color: #4B164C;
+    cursor: pointer;
+}
+
+#f4limg {
+    transition: 1s ease;
+    border-radius: 20px;
+}
+#f4limg:hover {
+    filter: brightness(50%);
+}
+
+.back {
+    color: black;
+    background-color: #F5EFFF;
+    height: 30px;
+    width: 100px;
+    transition: 1s ease;
+    border: solid;
+    font-size: 17px;
+    font-family: 'Playfair Display';
+}
+.back:hover {
+    color: white;
+    background-color: #4B164C;
+    cursor: pointer;
+}
+
+.instructors_home_bt {
+    height: 50px;
+    width: 120px;
+    border: 0px solid;
+    background-color: #434242;
+    color: white;
+    transition: 1s ease;
+    font-size: 17px;
+    font-family: 'Playfair Display';
+}
+.instructors_home_bt:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.alphabet {
+    margin-top: 20px;
+    height: 100px;
+    width: 50%;
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    border: 2px solid black;
+    background-color: pink;
+    transition: 0.5s ease;
+}
+.alphabet:hover {
+    background-color: #4B164C;
+    color: white;
+    cursor: pointer;
+}
+
+.alphabetdivs {
+    background-color: #F8E7F6;
+    width: 70%;
+    padding: 1%;
+    border-radius: 50px;
+    border: 3px solid #32012F;
+    margin: 0 auto;
+}
